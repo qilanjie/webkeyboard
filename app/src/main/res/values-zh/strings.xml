@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">网络键盘</string>
+    <string name="app_quickinstuctions">网络键盘，是透过电脑在网页上输入文字，就可在您的手机即时出现文字！\n\n首先设定网络键盘为您的输入法，并连线到Wifi；接著使用电脑连线到同一个Wifi，开启浏览器连线到\nhttp://%1$s:19999\n接著在网页上输入文字，就可在您的手机显示文字</string>
+
+    <string name="menu_keyboard_select">切换键盘</string>
+    <string name="menu_keyboard_setting">键盘设定</string>
+
+    <string name="text_test_hint">在这裡输入文字，测试您的连线</string>
+
+    <string name="dialog_error_not_enabled_title">网络键盘尚未启用</string>
+    <string name="dialog_error_not_enabled">是否要现在开启键盘设定，启用网络键盘？</string>
+
+    <string name="dialog_connect_title">连线权限</string>
+    <string name="dialog_connect_message">是否允许 %1$s 连线？</string>
+
+    <string name="notification_title">网络键盘</string>
+    <string name="notification_waiting">Listening on %1$s Port 19999</string>
+    <string name="notification_peer">Connected to: %1$s</string>
+</resources>

@@ -3,15 +3,20 @@
 
 <head>
 	<title>Web Keyboard</title>
-	<script src="msgpack.min.js"></script>
+	<meta charset="UTF-8">
+	<script src="msgpack_min.js"></script>
 	<script src="script.js"></script>
 	<script>window.onload = function() {new WebKeyboard();};</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<p >
+		Web键盘
+	</p>
 
 	<div id="container">
+
 		<textarea id="write" rows="6" cols="60"></textarea>
 		<ul id="keyboard">
 			<li class="symbol"><span>`</span><span class="invisible">~</span></li>

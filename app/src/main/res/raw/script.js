@@ -96,7 +96,6 @@ var WebKeyboard = function() {
 
   this.setDirect();
 };
-
 WebKeyboard.prototype.send_key = function(mode, code, shift_key, ctrl_key, alt_key) {
   var request = new MsgPackRequest();
   request.post("/key", {
@@ -179,6 +178,7 @@ var VirtualKeyboard = function(keyboard, input_area, web_kb) {
 
   var keys = keyboard.getElementsByTagName('li');
   for (var i = 0; i < keys.length; i++) {
+  console.log(keys[i]);
     keys[i].addEventListener('click', this.click.bind(this), false);
     if (keys[i].classList.contains('mode'))
       this.mode_key = keys[i];
@@ -216,6 +216,7 @@ VirtualKeyboard.prototype.setMode = function(mode) {
 
 VirtualKeyboard.prototype.click = function(e) {
   var char = e.target.innerText;
+//   alert(e.target.classList.item(0));
 
   // Shift keys
   if (e.target.classList.contains('left-shift') || e.target.classList.contains('right-shift')) {
